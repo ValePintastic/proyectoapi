@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const nombrecompleto = document.getElementById('nombrecompleto').value;
         const email = document.getElementById('email').value;
         const celular = document.getElementById('celular').value;
-        const cumpleaños = document.getElementById('cumpleaños').value;
+        const birthday = document.getElementById('birthday').value;
         const password = document.getElementById('password').value;
 
         try{
