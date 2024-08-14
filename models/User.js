@@ -25,7 +25,7 @@ const User = sequelize.define('User', {
       unnique: true
      },
 
-     cumpleaños: {
+     birthday: {
       type: DataTypes.STRING,
       allowNull: false,
       unnique: true

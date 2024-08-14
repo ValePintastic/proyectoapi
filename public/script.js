@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({nombrecompleto, email, celular, cumpleaños, password})
+                body: JSON.stringify({nombrecompleto, email, celular, birthday, password})
                 });
 
 
