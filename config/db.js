@@ -1,8 +1,17 @@
-const {Sequelize} = require('sequelize')
+const {Sequelize} = require('sequelize');
+require('dotenv').config()
 
-const sequelize = new Sequelize('retoapi', 'root', '', {
+/*const sequelize = new Sequelize('retoapi', 'root', '', {
     host: 'localhost',
     dialect: 'mysql'
+})*/
+
+
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'mysql',
+    dialectOptions:{
+        ConnectionTimeout: 60000
+    }
 })
 
 const connectDB = async() =>{
