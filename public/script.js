@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const password = document.getElementById('password').value;
 
         try{
-            const res =await fetch('https://proyectoapi2.onrender.com',{
+            const res =await fetch('https://proyectoapi2.onrender.com/api/auth/register',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
